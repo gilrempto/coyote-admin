@@ -17,10 +17,28 @@
       </q-item>
 
       <q-separator></q-separator>
-
-      <q-card-section>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </q-card-section>
+      <q-table flat :rows="dataSource" row-key="id"></q-table>
     </q-card>
   </q-page>
 </template>
+
+<script>
+import { defineComponent, ref, onMounted } from "vue";
+import { api } from "boot/axios";
+
+export default defineComponent({
+  setup() {
+    const dataSource = ref([]);
+    const getProducts = async () => {
+      dataSource.value = await api
+        .get("catalog/product")
+        .then((response) => (dataSource.value = response.data));
+    }
+    onMounted(getProducts);
+
+    return {
+      dataSource
+    }
+  },
+})
+</script>
