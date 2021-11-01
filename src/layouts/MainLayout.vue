@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <w-header>
       <template v-slot:brand>
-        <q-toolbar-title>Coyote Admin</q-toolbar-title>
+        Coyote Admin
       </template>
     </w-header>
 
