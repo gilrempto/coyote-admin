@@ -1,6 +1,6 @@
-# Coyote Admin (coyote-admin)
+# Coyote Admin
 
-Coyote Commerce admin area
+Coyote Commerce admin area (under development)
 
 ## Install the dependencies
 ```bash
