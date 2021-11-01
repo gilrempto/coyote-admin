@@ -6,7 +6,7 @@
       </template>
     </w-header>
 
-    <w-sidebar></w-sidebar>
+    <w-sidebar :items="sidebarItems"></w-sidebar>
 
     <q-page-container>
       <router-view />
@@ -19,6 +19,19 @@ import { defineComponent } from "vue";
 import WHeader from "waves/components/WHeader.vue";
 import WSidebar from "waves/components/WSidebar.vue";
 
+const sidebarItems = [
+  {
+    icon: "dashboard",
+    label: "Dashboard",
+    link: "/"
+  },
+  {
+    icon: "inventory_2",
+    label: "Products",
+    link: "products"
+  }
+]
+
 export default defineComponent({
   name: "MainLayout",
 
@@ -28,7 +41,9 @@ export default defineComponent({
   },
 
   setup() {
-    return {};
+    return {
+      sidebarItems
+    };
   },
 });
 </script>
