@@ -4,15 +4,13 @@
       <q-item>
         <q-item-section avatar>
           <q-avatar>
-            <q-icon name="inventory_2"></q-icon>
+            <q-icon name="las la-boxes"></q-icon>
           </q-avatar>
         </q-item-section>
 
         <q-item-section>
           <q-item-label>Products</q-item-label>
-          <q-item-label caption>
-            Lorem ipsum dolor sit amet
-          </q-item-label>
+          <q-item-label caption> Lorem ipsum dolor sit amet </q-item-label>
         </q-item-section>
       </q-item>
 
@@ -33,12 +31,12 @@ export default defineComponent({
       dataSource.value = await api
         .get("catalog/product")
         .then((response) => (dataSource.value = response.data));
-    }
+    };
     onMounted(getProducts);
 
     return {
-      dataSource
-    }
+      dataSource,
+    };
   },
-})
+});
 </script>

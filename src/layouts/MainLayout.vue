@@ -1,9 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <w-header>
-      <template v-slot:brand>
-        Coyote Admin
-      </template>
+      <template v-slot:brand> Coyote Admin </template>
     </w-header>
 
     <w-sidebar :items="sidebarItems"></w-sidebar>
@@ -21,16 +19,16 @@ import WSidebar from "waves/components/WSidebar.vue";
 
 const sidebarItems = [
   {
-    icon: "dashboard",
+    icon: "las la-chart-bar",
     label: "Dashboard",
-    link: "/"
+    link: "/",
   },
   {
-    icon: "inventory_2",
+    icon: "las la-boxes",
     label: "Products",
-    link: "products"
-  }
-]
+    link: "products",
+  },
+];
 
 export default defineComponent({
   name: "MainLayout",
@@ -42,7 +40,7 @@ export default defineComponent({
 
   setup() {
     return {
-      sidebarItems
+      sidebarItems,
     };
   },
 });
