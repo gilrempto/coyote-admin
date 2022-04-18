@@ -4980,22 +4980,29 @@ qs@6.9.7:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.7.tgz#4610846871485e1e048f44ae3b94033f0e675afe"
   integrity sha512-IhMFgUmuNpyRfxA90umL7ByLlgRXu6tIfKPpF5TmcfRLlLCckfP/g3IQmju6jjpu+Hh8rA+2p6A27ZSPOOHdKw==
 
-quasar-waves@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/quasar-waves/-/quasar-waves-0.0.4.tgz#d8bc68717218838473fb42252a429537c9b1c515"
-  integrity sha512-RcOEsT1tmr3gfOVBZTrIf83e0xRCjbDAjOszDl5OlDWkzZ9f3aC7nqVQB2bHBThrCZPsC18hcXzpGSVMOhqLag==
+quasar-waves@^1.0.0-alpha.1:
+  version "1.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/quasar-waves/-/quasar-waves-1.0.0-alpha.1.tgz#99f056864c6c10cf9aa81e10524300e96b622156"
+  integrity sha512-OrY8KfxyElrcuMYVOawByowqHvFR73Ois7Vl9hzcVEuKnZuK7E4saFY0MrJSpU1YC3R/LaHOeZ/Dte0lSwOjVQ==
   dependencies:
     "@quasar/extras" "^1.0.0"
     axios "^0.21.1"
-    core-js "^3.6.5"
-    quasar "^2.0.0"
+    quasar "^2.6.0"
+    validator "^13.7.0"
+    vue "^3.0.0"
     vue-i18n "^9.0.0"
+    vue-router "^4.0.0"
     vuex "^4.0.1"
 
-quasar@^2.0.0, quasar@^2.3.2:
+quasar@^2.3.2:
   version "2.6.5"
   resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.6.5.tgz#f744e2f12c53430da58da413d31e0720cbd6a6fa"
   integrity sha512-ABaFt6eXDtXwV6RUt8VW5xxvqb8gpflIdYc8+ucGFnZ5zKH20YzqHOlIg/jJOw3T/C1s8T/c6T4yxvhxxj/uxA==
+
+quasar@^2.6.0:
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.6.6.tgz#00bc2acbe5ef2492f7b959f539fd2e469e7082a6"
+  integrity sha512-rXoGZROOXVutQX14l/ys0te/NrgQ754krI0Vz52pBXdznyS+dTL6AgGpr3JMwffoxpxhQyedrL2jOAMpq+Jsgw==
 
 queue-microtask@^1.2.2:
   version "1.2.3"
@@ -5875,6 +5882,11 @@ v8-compile-cache@^2.0.3:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
+
+validator@^13.7.0:
+  version "13.7.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-13.7.0.tgz#4f9658ba13ba8f3d82ee881d3516489ea85c0857"
+  integrity sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==
 
 vary@~1.1.2:
   version "1.1.2"

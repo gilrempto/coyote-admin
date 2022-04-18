@@ -26,7 +26,7 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.20.0",
     "eslint-webpack-plugin": "^2.6.0",
-    "quasar-waves": "0.0.4"
+    "quasar-waves": "^1.0.0-alpha.1"
   },
   "browserslist": [
     "last 10 Chrome versions",
